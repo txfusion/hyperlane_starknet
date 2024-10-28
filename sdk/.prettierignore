@@ -1,0 +1,7 @@
+*.rs
+*.toml
+*.sh
+*.env
+
+*.lock
+
