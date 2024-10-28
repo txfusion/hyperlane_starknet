@@ -2,24 +2,13 @@
   "name": "@hyperlane-xyz/starknet-core",
   "description": "Core cairo contracts for Hyperlane",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
-  "scripts": {
-    "build": "tsc && cp -R ./src/target ./dist/target",
-    "test": "jest",
-    "test:watch": "jest --watch"
-  },
-  "keywords": [
-    "Hyperlane",
-    "Cairo",
-    "Starknet"
-  ],
-  "engines": {
-    "node": ">=16"
-  },
   "homepage": "https://www.hyperlane.xyz",
   "author": "",
   "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc && cp -R ./src/target ./dist/target"
+  },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^22.7.9",
@@ -31,5 +20,17 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.19.1",
     "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "Hyperlane",
+    "Cairo",
+    "Starknet"
+  ],
+  "engines": {
+    "node": ">=16"
   }
 }

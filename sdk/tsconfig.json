@@ -21,11 +21,13 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
     "outDir": "./dist",
     "rootDir": "./src"
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts"],
   "ts-node": {
     "experimentalSpecifierResolution": "node",
     "experimentalResolver": true,
